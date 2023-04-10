@@ -1,0 +1,80 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    background-image: url("https://img.freepik.com/foto-gratis/vista-superior-tazon-lentejas-variedad-condimentos_1220-423.jpg?w=360&t=st=1681128559~exp=1681129159~hmac=c8a14610027b24b716899131191a8e6935ba84f873f9bad27a25176e154fcaf6");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    font-size: 62.5%;
+    font-family: sans-serif;
+
+
+}
+
+header {
+    
+    color: #fff;
+    height: 60px;
+    max-height: max-content;
+}
+
+.main-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #33333394;
+    transform:translateY(-100%) ;
+    
+}
+.toggle-menu {
+    position: absolute; 
+    margin: 1rem;
+    cursor: pointer;
+    filter: invert(0);
+}
+
+
+@media screen and (min-width: 768px) {
+    .toggle-menu {
+        display: none;
+    }
+
+
+    
+}
+
+
+.main-menu--link {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.main-menu--item{
+    padding: 1rem;    
+}
+
+@media screen and (min-width: 768px) {
+    .main-menu {
+        flex-direction: row;
+    }
+    .main-menu--show {
+        transform:translateY(0) ;
+    }
+    
+}
