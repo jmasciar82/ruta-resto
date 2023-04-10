@@ -109,14 +109,20 @@ main .main-paso1 {
 
 .city {
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     
 }
 
 
 
-.city label h2 {
+.option-container {
+    font-size: 1.1rem;
+    line-height: 20px;
     color: #fff;
+
+}
+.option-container input[type="submit"]{
+    font-size: 0.8rem;
 }
 
 
