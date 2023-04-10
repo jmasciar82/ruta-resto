@@ -52,16 +52,7 @@ header {
     transform:translateY(0%) ;
 }
 
-@media screen and (min-width: 600px) {
-    .toggle-menu {
-        display: none;
-    }  
-    .main-menu {
-        flex-direction: row;
-        transform: translate(0);
-    }
-    
-}
+
 
 
 .main-menu--link {
@@ -73,4 +64,66 @@ header {
 
 .main-menu--item{
     padding: 1rem;    
+}
+
+main .main-paso1 {
+    display: flex;
+    position: relative;
+    
+    border: #fff 2px solid;
+    background-image: url("https://img.freepik.com/foto-gratis/comida-ingredientes_1220-4884.jpg?w=740&t=st=1681094745~exp=1681095345~hmac=7e01bdc2ff5a45d7d3c6b6fce8b0356bbf6b61fb4b915b48d284793be59b5eb2");
+
+    margin: 0px;
+
+    width: 100%;
+    height: 300px;
+    max-width: 500px;
+    min-width: 300px;
+    box-shadow: 2px 2px 2px 1px rgba(233, 227, 227, 0.507);
+
+}
+
+.option-container {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    
+
+    top: 3rem;
+    right: 1rem;
+    
+    height: 200px;
+    width: 200px;
+    border: #332e2e7a 2px solid;
+    background-color: #0f0e0e49;
+
+}
+
+.city {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    
+}
+
+
+
+.city label h2 {
+    color: #fff;
+}
+
+
+
+
+
+
+@media screen and (min-width: 600px) {
+    .toggle-menu {
+        display: none;
+    }  
+    .main-menu {
+        flex-direction: row;
+        transform: translate(0);
+    }
+    
+    
 }
