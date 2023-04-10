@@ -20,8 +20,6 @@ body {
 
     font-size: 62.5%;
     font-family: sans-serif;
-
-
 }
 
 header {
@@ -37,7 +35,10 @@ header {
     flex-direction: column;
     align-items: center;
     background-color: #33333394;
-    transform:translateY(-100%) ;
+    transition: transform 0.3s;
+    transform:translateY(0%)
+    
+    
     
 }
 .toggle-menu {
@@ -45,15 +46,20 @@ header {
     margin: 1rem;
     cursor: pointer;
     filter: invert(0);
+    z-index: 1;
+}
+.main-menu--show {
+    transform:translateY(0%) ;
 }
 
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
     .toggle-menu {
         display: none;
+    }  
+    .main-menu {
+        flex-direction: row;
+        transform: translate(0);
     }
-
-
     
 }
 
@@ -67,14 +73,4 @@ header {
 
 .main-menu--item{
     padding: 1rem;    
-}
-
-@media screen and (min-width: 768px) {
-    .main-menu {
-        flex-direction: row;
-    }
-    .main-menu--show {
-        transform:translateY(0) ;
-    }
-    
 }
